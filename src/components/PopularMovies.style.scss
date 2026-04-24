@@ -1,0 +1,66 @@
+.popular-section {
+  padding: 60px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.6rem;
+  color: white;
+}
+
+.scroll-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.scroll-buttons button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+  }
+}
+
+.movies-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  scrollbar-width: none; /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 240px;   // ширина одной карточки
+}
+
+ @media(max-width: 425px) {
+  .section-header {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+ }

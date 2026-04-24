@@ -1,0 +1,75 @@
+
+
+.genrePage-container {
+    .genrePage-title {
+    text-align: center;
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .movie-card-link {
+        max-width: 350px;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    
+}
+}
+
+
+.genrePage-title {
+    text-align: center;
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .movie-card-link {
+        max-width: 350px;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    
+    
+}
+
+.genrePage-btn {
+                    display: block;
+                    margin: 0 auto;
+                    background: transparent;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    font-size: 24px;
+                    color: #fff;
+                    border: 2px solid silver;
+                    border-radius: 19px;
+                    transition: all 600ms ease;
+
+                     .play {
+                        margin-right: 10px;
+                    }
+
+
+                    &:hover {
+                        transition: all 600ms ease;
+                        scale: calc(1.1);
+                    }
+    
+}

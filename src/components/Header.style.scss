@@ -1,0 +1,142 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+
+    a {
+        transition: all 600ms ease;
+        display: inline-block;
+        
+        &:hover {
+            transform: scale(1.1);
+            transition: all 600ms ease;
+            color: red;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: red;
+            transition: width 0.4s ease, left 0.4s ease;
+  }
+
+  &:hover {
+    color: red;
+
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+  }
+    }
+
+    .logo {
+        font-size: 50px;
+        font-weight: 600;
+        color: #fff;
+
+        .logo-red {
+            color: red;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        
+    }
+    
+    .nav {
+        margin-right: 40px;
+    }
+
+    ul {
+        display: flex;
+        gap: 60px;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    button {
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+
+       
+        transition: all 600ms ease;
+        display: inline-block;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 600ms ease;
+            color: red;
+        }
+    }
+
+    input {
+        color: #fff;
+        border: none;
+        padding: 3px;
+
+    }
+   
+    
+}
+
+ @media(max-width: 768px) {
+        .header {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }   
+
+    @media(max-width: 425px) {
+        .header {
+            
+            .navigation {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                button {
+                    margin-top: 20px;
+                }
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+    }   
+
+
+    .search-dropdown {
+        display: flex;
+        flex-direction: column;
+        z-index: 13;
+        position: absolute;
+        background: transparent;
+        top: 100px;
+        right: 150px;
+        gap: 20px;
+
+        .search-result-item {
+            display: flex;
+            flex-direction: column;
+            max-width: 150px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        
+
+    }

@@ -1,0 +1,113 @@
+
+.hero {
+    height: 100vh;                    
+    min-height: 700px;                
+    position: relative;               
+    color: white;
+    overflow: hidden;
+    z-index: 12;
+
+    .hero-overlay {
+        position: absolute;
+        background: transparent;
+        max-width: 700px;
+        z-index: 2;
+        bottom: 50px;
+        left: 40px;
+        
+
+        .hero-content {
+            background: transparent;
+
+            .hero-genres {
+                display: flex;
+                gap: 15px;
+                background: transparent;
+                
+                h4 {
+                    background: transparent;
+                    text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+                }
+            }
+
+            h1, p, span {
+                background: transparent;
+                margin-bottom: 15px;
+                text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 400;
+                text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+            }
+            
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                margin-top: 15px;
+                text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+            }
+
+            .star-icon {
+                color: gold;
+                background: transparent;
+
+                
+            }
+
+            
+        }
+
+        .hero-btn {
+                background: transparent;
+                display: flex;
+                gap: 25px;
+                align-items: center;
+
+
+                .btn-play {
+                    background: transparent;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    font-size: 24px;
+                    color: #fff;
+                    border: 2px solid silver;
+                    border-radius: 19px;
+                    transition: all 600ms ease;
+
+                     .play {
+                        margin-right: 10px;
+                    }
+
+
+                    &:hover {
+                        transition: all 600ms ease;
+                        scale: calc(1.1);
+                    }
+                }
+
+                .btn-favorite {
+                    background: transparent;
+                    border: none;
+                    font-size: 34px;
+                    color: #3887F5;
+                    cursor: pointer;
+                    transition: all 600ms ease;
+
+                    &:hover {
+                        transition: all 600ms ease;
+                        scale: calc(1.1);
+                    }
+                    
+                }
+                .btn-favorite.active {
+                    color: gold;
+                }
+            }
+        
+    }
+
+    
+    
+}
