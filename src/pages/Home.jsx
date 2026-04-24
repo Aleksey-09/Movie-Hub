@@ -88,6 +88,7 @@ export default function Home() {
   useEffect(() => {
     const fetchGenres = async () => {
       try {
+        console.log("API KEY:", import.meta.env.VITE_API_KEY);
         const apiKey = import.meta.env.VITE_TMDB_API_KEY;
         const res = await fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=ru-RU`);
         const data = await res.json();
